@@ -1,0 +1,21 @@
+.list .item-input.invalid{
+  border-left: 2px solid;
+  border-left-color: $assertive;
+  padding-left: 14px;
+}
+.list .item-input.invalid:after {
+  @extend .ion;
+  content: $ionicon-var-alert-circled;
+  color: $assertive;
+  margin-right: 5px;
+  position: absolute;
+  bottom: 14px;
+  right: 0;
+}
+.error-message-wrapper{
+  @extend .assertive-bg;
+  @extend .light;
+  @extend .assertive-border;
+  padding: 5px;
+  text-align: center;
+}

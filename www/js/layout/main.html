@@ -1,0 +1,41 @@
+<!-- 
+      The nav bar that will be updated as we navigate between views.
+    -->
+<ion-nav-bar class="bar-stable nav-title-slide-ios7" align-title="left">
+  <ion-nav-back-button class="button-icon icon ion-ios7-arrow-back">
+    Back
+  </ion-nav-back-button>
+  <ion-nav-buttons side="left">
+    <button class="button button-icon icon ion-navicon" ng-click="main.toggleRightSideMenu()"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <span class="clash">
+      <span class="gradient-text gradient-black-multistop">
+        Clash On!
+      </span>
+      <span class="gradient-text-shadow shadow-alpha3d">
+        Clash On!
+      </span>
+    </span>
+  </ion-nav-buttons>
+</ion-nav-bar>
+<!--
+  The views will be rendered in the <ion-nav-view> directive below
+  Templates are in the /templates folder (but you could also
+  have templates inline in this html file if you'd like).
+-->
+<ion-side-menus>
+  <ion-side-menu side="left">
+    <ion-header-bar>
+    </ion-header-bar>
+    <ion-content>
+      <div class="list">
+        <a class="item" ng-show="main.isLoggedIn()" ng-click="main.logout()">{{'LOGOUT' | translate }}</a>
+        <a class="item" ng-hide="main.isLoggedIn()" ui-sref="main.login" menu-close>{{'LOGIN' | translate }}</a>
+      </div>
+    </ion-content>
+  </ion-side-menu>
+  <ion-side-menu-content>
+    <ion-nav-view name="main-content"></ion-nav-view>
+  </ion-side-menu-content>
+</ion-side-menus>

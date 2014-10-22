@@ -1,0 +1,28 @@
+<form novalidate name="login.form">
+  <div class="row">
+    <div class="col">
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon not-rounded"><i class="glyphicon glyphicon-user"></i></div>
+            <input class="form-control not-rounded" type="text" placeholder="{{ 'USERNAME' | translate }}" name="username" ng-model="login.username" ng-focus="login.error = null;" required autocomplete="off">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon not-rounded"><i class="glyphicon glyphicon-lock"></i></div>
+            <input class="form-control not-rounded" type="password" placeholder="{{ 'PASSWORD' | translate }}" name="password" ng-model="login.password" ng-focus="login.error = null;" required ng-minlength="8">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <button type="submit" class="button button-positive button-block">{{ 'LOGIN' | translate }}</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <a ui-sref="main.welcome.signup" class="button button-block button-balanced">{{ 'SIGNUP' | translate }}</a>
+    </div>
+  </div>
+</form>

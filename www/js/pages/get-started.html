@@ -1,0 +1,19 @@
+<ion-view title="{{ 'WELCOME' | translate}}">
+  <ion-content>
+    <form novalidate name="getStarted.form">
+      <div class="list list-inset">
+        <label class="item item-input item-floating-label" ng-class="main.getValidationCssClass(getStarted.form.villageName)">
+          <span class="input-label">{{ 'VILLAGE_NAME' | translate }}</span>
+          <input type="text" placeholder="{{ 'VILLAGE_NAME' | translate }}" name="villageName" ng-model="getStarted.villageName" required>
+        </label>
+      </div>
+      <div class="row">
+        <div class="col text-right">
+          <button class="button button-positive" ng-disabled="getStarted.form.$invalid">{{ "CONTINUE" | translate}}</button>
+          <br class="">
+          <a class="button button-clear button-assertive" ui-sref="main.tab.dash">{{ "SKIP" | translate}}</a>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,16 @@
+<ion-view title="Account">
+  <ion-content class="padding">
+    <h1>Account</h1>
+    <div>{{vm.test}}</div>
+    <div ng-hide="main.isLoggedIn()">
+      <button ng-click="main.openLoginModal()" >login</button>
+    </div>
+    <div ng-show="main.isLoggedIn()">
+      <button ng-click="main.logout()" >logout</button>
+    </div>
+    <div>
+      test<br/>
+      test
+    </div>
+  </ion-content>
+</ion-view>

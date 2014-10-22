@@ -1,0 +1,22 @@
+{
+  "LOGOUT": "Logout",
+  "LOGIN": "Login",
+  "SIGNUP": "Sign up",
+  "DASHBOARD": "My Village",
+  "FRIENDS": "Friends",
+  "UPGRADES": "Upgrades",
+  "USERNAME": "Username",
+  "PASSWORD": "Password",
+  "EMAIL": "Email",
+  "USERNAME_TAKEN": "The username is already in use.",
+  "EMAIL_TAKEN": "The email address is already in use.",
+  "SIGNUP_UNKNOWN_ERROR": "An error occurred during signup.",
+  "SIGNUP_WITH": "Sign up with:",
+  "GET_STARTED": "Get Started",
+  "VILLAGE_NAME": "Village Name",
+  "CONTINUE": "Continue",
+  "SKIP": "Skip",
+  "WELCOME": "Welcome",
+  "LOGIN_INVALID": "Invalid. Try again.",
+  "LOGIN_ERROR": "An error occurred. Try again."
+}

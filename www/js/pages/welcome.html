@@ -1,0 +1,24 @@
+<ion-header-bar align-title="middle" class="bar bar-stable">
+  <h1 class="title">{{ vm.title | translate}}</h1>
+</ion-header-bar>
+<div class="pane">
+  <div class="scroll-content has-header">
+    <div class="row padding-top">
+      <div class="col text-center padding-top">
+        <h1 class="clash">
+            <span class="gradient-text gradient-black-multistop">
+              {{ 'CLASH_ON' | translate}}
+            </span>
+            <span class="gradient-text-shadow shadow-alpha3d">
+              {{ 'CLASH_ON' | translate}}
+            </span>
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <ui-view name="welcome-content"></ui-view>
+      </div>
+    </div>
+  </div>
+</div>
